@@ -40,8 +40,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/dottorblaster/cauldron.git",
-                    "tag": "v0.4.1",
-                    "commit": "8e47422c846459142d06e453adf4839466754661"
+                    "tag": "v0.4.2",
+                    "commit": "14c384860c49c181ec6b7df14526f209c0cfccb1"
                 },
                 "cargo-sources.json"
             ]
