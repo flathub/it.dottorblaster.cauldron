@@ -1,11 +1,11 @@
 {
     "id": "it.dottorblaster.cauldron",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
-        "org.freedesktop.Sdk.Extension.llvm18"
+        "org.freedesktop.Sdk.Extension.llvm20"
     ],
     "command": "cauldron",
     "finish-args": [
@@ -18,7 +18,7 @@
         "--env=RUST_BACKTRACE=1"
     ],
     "build-options": {
-        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm18/bin",
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin",
         "env": {
             "CARGO_REGISTRIES_CRATES_IO_PROTOCOL": "sparse",
             "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang",
@@ -34,14 +34,16 @@
             "run-tests": true,
             "config-opts": [
                 "-Dprofile=default",
-                "-Dsandboxed-build=true"
+                "-Dsandboxed-build=true",
+                "-Dconsumer_key=c479361eab394b71ab5229dceade8ec1",
+                "-Dconsumer_secret=387d72cd24aa4cd585c52158c835cbb7"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/dottorblaster/cauldron.git",
-                    "tag": "v0.5.0",
-                    "commit": "f043a87c96d3d6c23eac9637d4ff98f6ab5439a3"
+                    "tag": "v0.6.0",
+                    "commit": "f627e7f94733b534dbbe05f626728faf3bbd2dc7"
                 },
                 "cargo-sources.json"
             ]
