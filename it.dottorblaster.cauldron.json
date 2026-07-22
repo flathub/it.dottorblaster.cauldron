@@ -1,7 +1,7 @@
 {
     "id": "it.dottorblaster.cauldron",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable",
@@ -42,8 +42,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/dottorblaster/cauldron.git",
-                    "tag": "v0.9.6",
-                    "commit": "557e52a3549e08375a78fd6ef6562b6ed66f5855"
+                    "tag": "v1.0.0",
+                    "commit": "94074eed0d966870f7f169930c28e42107b6d790"
                 },
                 "cargo-sources.json"
             ]
